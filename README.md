@@ -1,6 +1,6 @@
 # EOS Docker
 
-Minimilistic Framework for Development EOSIO Smart Contract using Docker
+Minimilistic Framework for Developing EOSIO Smart Contracts using Docker.
 
 
 Use yarn scripts:
