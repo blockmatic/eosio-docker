@@ -8,16 +8,17 @@ Use yarn scripts:
 ```
 "up": "docker-compose up -d",
 "down": "yarn stop; docker-compose down",
-"start": "docker-compose start && docker exec -d eosdocker_nodeos ./scripts/start.sh",
-"stop": "docker exec -i eosdocker_nodeos ./scripts/stop.sh && docker-compose stop",
+"start": "docker-compose start && docker exec -d eosdocker_eosio ./scripts/start.sh",
+"stop": "docker exec -i eosdocker_eosio ./scripts/stop.sh && docker-compose stop",
 "logs": "docker-compose logs -f",
 "flush": "yarn stop; docker-compose down -v",
-"rebuild": "docker-compose build --no-cache",
+"build": "docker-compose build --no-cache",
 "fresh": "yarn flush && yarn up",
 "ps": "docker-compose ps",
-"bash": "docker exec -it eosdocker_nodeos bash",
-"cleos": "docker exec -it eosdocker_nodeos cleos",
-"info": "docker exec -it eosdocker_nodeos cleos get info",
-"accounts": "docker exec -i eosdocker_nodeos ./scripts/create_accounts.sh",
-"setup": "docker exec -i eosdocker_nodeos ./scripts/setup.sh"
+"bash": "docker exec -it eosdocker_eosio bash",
+"cleos": "docker exec -it eosdocker_eosio cleos",
+"wallet": "docker exec -it eosdocker_eosio cleos wallet",
+"wallet:unlock": "docker exec -i eosdocker_eosio ./scripts/unlock.sh",
+"info": "docker exec -it eosdocker_eosio cleos get info",
+"setup": "docker exec -i eosdocker_eosio ./scripts/setup.sh"
 ```

@@ -9,7 +9,7 @@ services:
       dockerfile: Dockerfile
     image: eosdocker/eosio
     ports:
-      - '8889:8888'
+      - '8888:8888'
       - '9831:9876'
     environment:
       DATA_DIR: /root/data-dir
