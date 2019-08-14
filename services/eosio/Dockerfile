@@ -3,7 +3,10 @@ FROM ubuntu:18.04
 RUN apt-get update && apt-get install -y wget jq sudo curl git
 # Install EOSIO
 RUN wget https://github.com/eosio/eos/releases/download/v1.8.1/eosio_1.8.1-1-ubuntu-18.04_amd64.deb
-RUN apt-get update && sudo apt install -y ./eosio_1.8.1-1-ubuntu-18.04_amd64.deb
+RUN sudo apt install -y ./eosio_1.8.1-1-ubuntu-18.04_amd64.deb
+# Install EOSIO.CDT
+RUN wget https://github.com/EOSIO/eosio.cdt/releases/download/v1.6.2/eosio.cdt_1.6.2-1-ubuntu-18.04_amd64.deb
+RUN sudo apt install -y ./eosio.cdt_1.6.2-1-ubuntu-18.04_amd64.deb
 # Define working directory
 WORKDIR /opt/application
 # Copy application code

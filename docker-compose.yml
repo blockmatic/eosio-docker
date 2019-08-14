@@ -2,12 +2,12 @@ version: '3.5'
 
 services:
 
-  nodeos:
-    container_name: eosdocker_nodeos
+  eosio:
+    container_name: eosdocker_eosio
     build:
-      context: ./services/nodeos
+      context: ./services/eosio
       dockerfile: Dockerfile
-    image: eosdocker/nodeos
+    image: eosdocker/eosio
     ports:
       - '8889:8888'
       - '9831:9876'
@@ -15,11 +15,11 @@ services:
       DATA_DIR: /root/data-dir
       CONFIG_DIR: /opt/application/config
     volumes:
-      - nodeos_data:/root/data-dir
-      - ./services/nodeos:/opt/application
+      - eosio_data:/root/data-dir
+      - ./services/eosio:/opt/application
 
 volumes:
-  nodeos_data:
+  eosio_data:
 
 networks:
   default:

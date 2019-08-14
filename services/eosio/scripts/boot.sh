@@ -28,11 +28,12 @@ function create_eosio_accounts () {
   create_system_account eosio.stake $EOSIO_PUBKEY
   create_system_account eosio.token $EOSIO_PUBKEY
   create_system_account eosio.vpay $EOSIO_PUBKEY
+  create_system_account eosio.rex $EOSIO_PUBKEY
 }
 
 
 function compile_system_contracts () {
-  git clone --branch v1.5.2 https://github.com/EOSIO/eosio.contracts.git /opt/eosio.contracts
+  git clone --branch v1.7.0 https://github.com/EOSIO/eosio.contracts.git /opt/eosio.contracts
   cd /opt/eosio.contracts/
   ./build.sh
 }
@@ -67,7 +68,7 @@ function deploy_system_contracts () {
 
 # Make sure nodeos is running in the docker container
 sleep 5s
-until curl nodeos:8888/v1/chain/get_info
+until curl localhost:8888/v1/chain/get_info
 do
   sleep 1s
 done
