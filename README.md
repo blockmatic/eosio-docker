@@ -22,3 +22,7 @@ Use yarn scripts:
 "info": "docker exec -it eosdocker_eosio cleos get info",
 "setup": "docker exec -i eosdocker_eosio ./scripts/setup.sh"
 ```
+
+### Block Explorer
+
+You can use http://local.bloks.io or [EOSIO/eosio-explorer](https://github.com/EOSIO/eosio-explorer)
