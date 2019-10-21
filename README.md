@@ -48,11 +48,11 @@ You can use http://local.bloks.io or [EOSIO/eosio-explorer](https://github.com/E
 
 ## Contributing
 
-Read the [contributing guidelines](CONTRIBUTING.md) for details.
+Read the [contributing guidelines](https://developers.blockmatic.io) for details.
 
 ## Bug Reporting
 
-Please report bugs big and small by [opening an issue](https://github.com/blockmatic/eosio-hooks/issues/new). No possible bug report is too small.
+Please report bugs big and small by [opening an issue](https://github.com/blockmatic/eosio-docker/issues/new). No possible bug report is too small.
 
 ## License
 
