@@ -20,6 +20,11 @@
 
 Minimilistic Framework for Developing EOSIO Smart Contracts using Docker.
 
+## Motivation
+
+...
+
+## Usage
 
 Use yarn scripts:
 
@@ -41,35 +46,17 @@ Use yarn scripts:
 "setup": "docker exec -i eosdocker_eosio ./scripts/setup.sh"
 ```
 
-### Block Explorer
+## Local Block Explorer
 
 You can use http://local.bloks.io or [EOSIO/eosio-explorer](https://github.com/EOSIO/eosio-explorer)
-
 
 ## Contributing
 
 Read the [contributing guidelines](https://developers.blockmatic.io) for details.
 
-## Bug Reporting
-
-Please report bugs big and small by [opening an issue](https://github.com/blockmatic/eosio-docker/issues/new). No possible bug report is too small.
-
 ## License
 
 MIT © [Blockmatic](http://blockmatic.io)  
-See LICENSE for more info
-
-## Become a Supporter
-
-You can become by sending us crypto to the following addresses:
- 
-- EOS: blockmaticio
-- TELOS (TLOS): blockmaticio
-- DASH: XpTy5w6ysLpVWCiFCC1YaRtmYoVGBRQ1jW
-- Bitcoin (BTC): 3FgNyHz1aTMGHWrK2G3FzCxBHZnqQAnaqs
-- Bitcoin Cash (BCH): prnm5m2rwct4q548llf5twchk8wg5dnp9yvqdh9z97
-- Ether (ETH): 0xd341e8d372719b6da3577a7fc9b8b0f66324e2bd
-- Litecoin (LTC): MJ7KJTVHYzJd5Np2keaSdmLBbB39mMW54G
 
 ---
 
