@@ -50,17 +50,11 @@ You can use http://local.bloks.io or [EOSIO/eosio-explorer](https://github.com/E
 
 Read the [contributing guidelines](https://developers.blockmatic.io) for details.
 
-## License
-
-MIT © Blockmatic  
-
----
-
 ## Blockmatic
 
-Blockmatic is building a robust ecosystem of people and tools for development of decentralized applications (dApps) and fintech solutions.
+Blockmatic is building robust ecosystem of people and tools for development of decentralized applications.
 
-[blockmatic.io](https://blockmatic.io)  
+[blockmatic.io](https://blockmatic.io)
 
 <!-- Please don't remove this: Grab your social icons from https://github.com/carlsednaoui/gitsocial -->
 
