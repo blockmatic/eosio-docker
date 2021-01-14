@@ -1,11 +1,12 @@
 {
-  "name": "eos-docker",
+  "name": "eosio-tykhon",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:blockmatic/eos-docker.git",
   "author": "Gabo Esquivel <contact@gaboesquivel.com>",
   "license": "MIT",
-  "scripts":{
+  "scripts": {
+    "boot": "yarn up; sleep 10; yarn setup",
     "up": "docker-compose up -d",
     "down": "yarn stop; docker-compose down",
     "start": "docker-compose start && docker exec -d eosdocker_eosio ./scripts/start.sh",

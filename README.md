@@ -7,6 +7,7 @@ Minimilistic Framework for Developing EOSIO Smart Contracts using Docker.
 Use yarn scripts:
 
 ```
+"boot": "yarn up; sleep 10; yarn setup",
 "up": "docker-compose up -d",
 "down": "yarn stop; docker-compose down",
 "start": "docker-compose start && docker exec -d eosdocker_eosio ./scripts/start.sh",
@@ -27,10 +28,6 @@ Use yarn scripts:
 ## Local Block Explorer
 
 You can use http://local.bloks.io or [EOSIO/eosio-explorer](https://github.com/EOSIO/eosio-explorer)
-
-## Contributing
-
-Read the [contributing guidelines](https://developers.blockmatic.io) for details.
 
 ## Blockmatic
 
