@@ -21,7 +21,7 @@ Use yarn scripts:
 "cleos": "docker exec -it eosdocker_eosio cleos",
 "wallet": "docker exec -it eosdocker_eosio cleos wallet",
 "wallet:unlock": "docker exec -i eosdocker_eosio ./scripts/unlock.sh",
-"info": "docker exec -it eosdocker_eosio cleos get info",
+"get_info": "docker exec -it eosdocker_eosio cleos get info",
 "setup": "docker exec -i eosdocker_eosio ./scripts/setup.sh"
 ```
 
