@@ -1,4 +1,4 @@
-# EOS Docker
+# EOSIO Tykhon
 
 Minimilistic Framework for Developing EOSIO Smart Contracts using Docker.
 
