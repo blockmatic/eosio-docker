@@ -1,7 +1,5 @@
 # EOSIO Tykhon
 
-Minimilistic Framework for Developing EOSIO Smart Contracts using Docker.
-
 This project allows you to easily boot up a local EOSIO 2.0 chain for contract development.
 
 When developing smart contracts you don't really to deploy the platform contracts that control resources (CPU, RAM, NET) and block producer votes, a "bare" chain gives you unlimited resources and all the APIs required for development.  
