@@ -45,6 +45,13 @@ Use yarn scripts:
 
 You can use http://local.bloks.io or [EOSIO/eosio-explorer](https://github.com/EOSIO/eosio-explorer)
 
+## Tykhon
+
+Tychon or Tykhon (Τυχων, Tykhôn = "producer") is the name of a minor deity in Greek mythology who was a daemon of fertility.
+
+https://en.wikipedia.org/wiki/Tychon
+
+
 ## Blockmatic
 
 Blockmatic is building a robust ecosystem of people and tools for the development of blockchain applications.
