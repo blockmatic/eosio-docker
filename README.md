@@ -2,6 +2,22 @@
 
 Minimilistic Framework for Developing EOSIO Smart Contracts using Docker.
 
+This project allows you to easily boot up a local EOSIO 2.0 chain for contract development.
+
+When developing smart contracts you don't really to deploy the platform contracts that control resources (CPU, RAM, NET) and block producer votes, a "bare" chain gives you unlimited resources and all the APIs required for development.  
+
+Basic knowledge of Docker and Docker-Compose is required to fully understand this setup, which is really helpful to keep the development environment consistent across machines ( including windows systems ) and allows teams quickly share and start up ephimeral development environments.
+
+Handy commands are provided to interact with docker and the local chain, the names of the scripts should be self-explantory.
+You can use the file `services/eosio/scripts/accounts.json` to seed accounts by running `yarn boot` or `yarn setup` commands. 
+
+Once you boot a chain can interact with using the `yarn cleos` command or directly from the host machine using `cleos`, docker exposes the EOSIO api on `localhost:8888` and it's accesible from the host machine.  
+
+## Dependencies
+
+- Docker
+- Docker Compose
+- NodeJS, npm or yarn. We recommend using `nvm` to manage your nodejs versions. 
 ## Usage
 
 Use yarn scripts:
@@ -15,7 +31,7 @@ Use yarn scripts:
 "logs": "docker-compose logs -f",
 "flush": "yarn stop; docker-compose down -v",
 "build": "docker-compose build --no-cache",
-"fresh": "yarn flush && yarn up",
+"fresh": "yarn flush && yarn boot",
 "ps": "docker-compose ps",
 "bash": "docker exec -it eosdocker_eosio bash",
 "cleos": "docker exec -it eosdocker_eosio cleos",

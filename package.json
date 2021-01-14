@@ -14,7 +14,7 @@
     "logs": "docker-compose logs -f",
     "flush": "yarn stop; docker-compose down -v",
     "build": "docker-compose build --no-cache",
-    "fresh": "yarn flush && yarn up",
+    "fresh": "yarn flush && yarn boot",
     "ps": "docker-compose ps",
     "bash": "docker exec -it eosdocker_eosio bash",
     "cleos": "docker exec -it eosdocker_eosio cleos",
