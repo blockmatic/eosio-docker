@@ -3,11 +3,11 @@ version: '3.5'
 services:
 
   eosio:
-    container_name: tykhon_eosio
+    container_name: devnode_eosio
     build:
       context: ./services/eosio
       dockerfile: Dockerfile
-    image: tykhon/eosio
+    image: devnode/eosio
     ports:
       - '8888:8888'
       - '9831:9876'
@@ -15,12 +15,9 @@ services:
       DATA_DIR: /root/data-dir
       CONFIG_DIR: /opt/application/config
     volumes:
-      - eosio_data:/root/data-dir
+      - ./services/eosio/data:/root/data-dir
       - ./services/eosio:/opt/application
-
-volumes:
-  eosio_data:
-
+      
 networks:
   default:
-    name: tykhon
+    name: devnode
